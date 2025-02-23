@@ -24,10 +24,12 @@ const Home = ({ user }) => {
           />
         </div>
         <br />
-        <div>
-          <img style={{ width: '100%', height: '100px' }} src={myImage} alt="My Image" />
+        <div className= "image-container">
+          <img src={myImage} alt="Joga Bonito Retro" />
         </div>
       </div>
+      
+       
     </div>
   );
 };

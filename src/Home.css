@@ -1,47 +1,44 @@
-.header{
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    padding: 20px;
     background-color: whitesmoke;
+    padding: 20px;
     margin-bottom: 10px;
 }
-.logo{
+
+.logo {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-    margin-top: 10px;
+    padding-left: 20px;
 }
-.home-container {
-    padding: 20px;
-    position: relative;
-}
+
 .welcome-message {
-    position: absolute;
-    top: 10px;
-    right: 10px;
     font-size: 18px;
     font-weight: bold;
     color: black;
+    margin-top: 10px;
+    text-align: right;
 }
 
 .search-bar {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 200px;
-}
-.search-bar input {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 200px;
+}
+
+.search-bar input {
+    width: 200px;
     padding: 12px 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -49,3 +46,17 @@
     outline: none;
     transition: border-color 0.3s ease;
 }
+
+.image-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    max-width: 500px; 
+}
+
