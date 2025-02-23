@@ -9,6 +9,11 @@ const Home = ({ user }) => {
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
   };
+  const kitDetails = {
+    Name: "Barcelona away kit Ronaldo Nazario 96/97",
+    Price: "$150",
+    Season: "96/97"
+  };
 
   return (
     <div>
@@ -27,6 +32,11 @@ const Home = ({ user }) => {
         <div className= "image-container">
           <img src={myImage} alt="Joga Bonito Retro" />
         </div>
+        <div className="kit-details">
+          <p className="price">Price: {kitDetails.Price}</p>
+          <p className="season">Season: {kitDetails.Season}</p>
+        </div>
+          
       </div>
       
        
