@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Home.css';
 import myImage from './assets/1.jpg';
 
+
 const Home = ({ user }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -24,7 +25,7 @@ const Home = ({ user }) => {
         </div>
         <br />
         <div>
-          <img style={{ width: '100px', height: '100px' }} src={myImage} alt="My Image" />
+          <img style={{ width: '100%', height: '100px' }} src={myImage} alt="My Image" />
         </div>
       </div>
     </div>
