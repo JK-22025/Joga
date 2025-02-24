@@ -12,7 +12,8 @@ const Home = ({ user }) => {
   const kitDetails = {
     Name: "Barcelona away kit Ronaldo Nazario 96/97",
     Price: "$150",
-    Season: "96/97"
+    Season: "96/97",
+    Description: "Ronaldo Nazario 96/97 Barcelona away kit"
   };
 
   return (
@@ -35,6 +36,7 @@ const Home = ({ user }) => {
         <div className="kit-details">
           <p className="price">Price: {kitDetails.Price}</p>
           <p className="season">Season: {kitDetails.Season}</p>
+          <p className="description">Description: {kitDetails.Description}</p>
         </div>
           
       </div>
