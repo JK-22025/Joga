@@ -1,5 +1,6 @@
 .home-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
 
@@ -12,7 +13,7 @@
     background-color: whitesmoke;
     padding: 20px;
     width: 100%;
-    position: relative;
+    
 }
 
 .logo {
@@ -49,38 +50,39 @@
 
 .search-bar input {
     width: 200px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    outline: none;
+    outline: none; 
     transition: border-color 0.3s ease;
 }
 
+
 .image-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align image to the left */
     margin-top: 50px;
-
     
 }
 
 .image-container img {
-    max-width: 400px;
+    max-width: 200px;
     height: auto;
     display: block;
     position: relative;
-    top: 30px;
-    left: 10px;
-    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    
     
 }
 
 .kit-details {
     text-align: left;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     color: black;
+    margin-left: 20px;
 }
 
 .main-container {

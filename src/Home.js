@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Home.css';
 import myImage from './assets/1.jpg';
-
+import myimage from './assets/2.jpg';
+import myimage3 from './assets/3.jpg';
 
 const Home = ({ user }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -32,6 +33,9 @@ const Home = ({ user }) => {
         <br />
         <div className= "image-container">
           <img src={myImage} alt="Joga Bonito Retro" />
+          <img src={myimage} alt="Joga Bonito Retro" />
+          <img src={myimage3} alt="Joga Bonito Retro" />
+          
         </div>
         <div className="kit-details">
           <p className="price">Price: {kitDetails.Price}</p>
