@@ -5,6 +5,7 @@ import Login from './Login';
 import Home from './Home';
 import Kids from './Kids';
 import Kits from './Kits';
+import "./App.css";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -23,7 +24,7 @@ const App = () => {
 
   return (
     <Router>
-      <nav>
+      <nav id ="navbar">
         <Link to="/">Home</Link>
         <Link to="/Kits">Kits</Link>
         <Link to="/Kids">Kids</Link>

@@ -12,7 +12,10 @@ const Login = ({ onLogin }) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);  // Firebase login
-      onLogin(email);  // Call the parent function to update user state on successful login
+      onLogin(email); 
+      //navigate 
+      
+      // Call the parent function to update user state on successful login
     } catch (err) {
       setError(err.message);  // Display error if login fails
     }
