@@ -77,12 +77,22 @@
     
 }
 
+.kit{
+    text-align: center;
+    margin-left: translateX(-30px);
+}
+.kit img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 .kit-details {
-    text-align: left;
+    text-align: center;
     font-size: 14px;
     font-weight: bold;
     color: black;
-    margin-left: 20px;
+    margin-top: 5px;
 }
 
 .main-container {
@@ -90,6 +100,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-top: 30px;    
+}
+.kit a {
+    text-decoration: none;
+    display: block;
+    color: black;
 }
 
 

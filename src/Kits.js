@@ -1,10 +1,14 @@
 import React from "react";
+import "./Kits.css";
+
+   
+
 
 const Kits = () => {
     return (
         <div>
-            <h1>Kits</h1>
-            <p>This is the Kits page.</p>
+            <h1>Joga Bonito Retro</h1>
+            
             
         </div>
     );
