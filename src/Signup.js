@@ -1,7 +1,7 @@
-// Signup.js
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './firebase';  // Import auth from firebase.js
+import './Signup.css'; // Import the CSS file
 
 const Signup = ({ onSignup }) => {
   const [email, setEmail] = useState('');
@@ -11,18 +11,18 @@ const Signup = ({ onSignup }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await createUserWithEmailAndPassword(auth, email, password);  // Using Firebase v9+ SDK
-      onSignup(email);  // Call the parent function to update user state
+      await createUserWithEmailAndPassword(auth, email, password);
+      onSignup(email);
     } catch (err) {
-      setError(err.message);  // Display any errors
+      setError(err.message);
     }
   };
 
   return (
-    <div>
+    <div className="signup-container">
       <h2>Signup</h2>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      <form onSubmit={handleSubmit}>
+      {error && <p className="error-message">{error}</p>}
+      <form className="signup-form" onSubmit={handleSubmit}>
         <input
           type="email"
           placeholder="Email"
@@ -37,7 +37,7 @@ const Signup = ({ onSignup }) => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Sign Up</button>
+        <button type="submit" className="signup-button">Sign Up</button>
       </form>
     </div>
   );

@@ -15,6 +15,7 @@
 }
 
 .logo {
+    margin-top: 30px;
     font-size: 30px;
     font-weight: bold;
     color: black;
@@ -24,6 +25,7 @@
 }
 
 .welcome-message {
+    margin-top: 30px;
     font-size: 18px;
     font-weight: bold;
     color: black;
@@ -102,3 +104,33 @@
     max-width: 1400px; /* Ensures full width */
     margin-top: 30px;
 }
+.image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .kits-row {
+    display: flex;
+    gap: 20px; /* Adds spacing between kits */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  .kit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px; /* Adjust width if needed */
+    text-align: center;
+  }
+  
+  .kit-image {
+    width: 100%;
+    max-width: 200px; /* Adjust image size */
+    height: auto;
+  }
+  
+  .kit-details {
+    margin-top: 10px;
+  }

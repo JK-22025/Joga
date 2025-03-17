@@ -60,6 +60,7 @@ const Kits = ({ user }) => {
                 <div className="images-container"></div>
                 <div className="kits"></div>
                     <img src={Maradona} alt="Maradona" />
+                    
 
             </div>
         </div>

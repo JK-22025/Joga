@@ -1,7 +1,7 @@
-// Login.js
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './firebase';  // Import auth from firebase.js
+import './Login.css';  // Import the CSS file
 
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
@@ -11,21 +11,19 @@ const Login = ({ onLogin }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await signInWithEmailAndPassword(auth, email, password);  // Firebase login
-      onLogin(email); 
-      //navigate 
-      
-      // Call the parent function to update user state on successful login
+      await signInWithEmailAndPassword(auth, email, password);
+      onLogin(email);
+      //navigate
     } catch (err) {
-      setError(err.message);  // Display error if login fails
+      setError(err.message);
     }
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      <form onSubmit={handleSubmit}>
+      {error && <p className="error-message">{error}</p>}
+      <form className="login-form" onSubmit={handleSubmit}>
         <input
           type="email"
           placeholder="Email"
@@ -40,7 +38,7 @@ const Login = ({ onLogin }) => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Log In</button>
+        <button type="submit" className="login-button">Log In</button>
       </form>
     </div>
   );
