@@ -24,14 +24,26 @@ const App = () => {
 
   return (
     <Router>
-      <nav id ="navbar">
+      <nav id="navbar">
         <Link to="/">Home</Link>
-        <Link to="/Kits">Kits</Link>
-        <Link to="/Kids">Kids</Link>
-        <Link to="/Contact">Contact</Link>
-        <Link to="/signup">Signup</Link>
-        <Link to="/login">Login</Link>
+        <Link to="/kits">Kits</Link>
+        <Link to="/kids">Kids</Link>
+        <Link to="/contact">Contact</Link>
+
+        {/* Show Signup and Login only if user is NOT logged in */}
+        {!user && (
+          <>
+            <Link to="/signup">Signup</Link>
+            <Link to="/login">Login</Link>
+          </>
+        )}
+
+        {/* Show Logout if user IS logged in */}
+        {user && (
+          <button className="logout-button" onClick={handleLogout}>Logout</button>
+        )}
       </nav>
+
       <Routes>
         <Route
           path="/"
