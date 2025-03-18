@@ -53,9 +53,10 @@ const Kits = () => {
 
     return (
         <div className="kits-container">
-            <h1>Joga Bonito Retro</h1>
+            <h1 className="logo">Joga Bonito Retro</h1>
 
             {/* Search Bar */}
+            <div className="search-bar"></div>
             <input
                 type="text"
                 className="search-bar"
