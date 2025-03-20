@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import myImage from './assets/1.jpg';
 import myImage2 from './assets/2.jpg';
@@ -48,30 +49,32 @@ const Home = ({ user }) => {
     <div className="kit">
       <img src={myImage} alt="R9 Kit" className="kit-image" />
       <div className="kit-details">
-        <a href="https://www.jogaretro.com" target="_blank" rel="noopener noreferrer">
+        <Link to="/home" target="_blank" rel="noopener noreferrer">
           <p className="kit-description">{kitDetails.Description}</p>
           <p className="kit-price">{kitDetails.Price}</p>
-        </a>
+        </Link>
       </div>
     </div>
 
     <div className="kit">
       <img src={myImage2} alt="Ronaldo Brazil 98 Kit" className="kit-image" />
       <div className="kit-details">
-        <a href="https://www.jogaretro.com" target="_blank" rel="noopener noreferrer">
+        <Link to="/home" target="_blank" rel="noopener noreferrer">
+
+        
           <p className="kit-name">{kitDetails2.Name}</p>
           <p className="kit-price">{kitDetails2.Price}</p>
-        </a>
+        </Link>
       </div>
     </div>
 
     <div className="kit">
       <img src={myImage3} alt="Romario Brazil 94 Kit" className="kit-image" />
       <div className="kit-details">
-        <a href="https://www.jogaretro.com" target="_blank" rel="noopener noreferrer">
+        <Link to="/home" target="_blank" rel="noopener noreferrer">
           <p className="kit-name">{kitDetails3.Name}</p>
           <p className="kit-price">{kitDetails3.Price}</p>
-        </a>
+        </Link>
       </div>
     </div>
   </div>
