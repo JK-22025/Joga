@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from './firebase';  // Import auth from firebase.js
+import { database, auth, ref, set } from './firebase';  // Import database & auth
 import './Signup.css'; // Import the CSS file
 
 const Signup = ({ onSignup }) => {
@@ -11,9 +11,22 @@ const Signup = ({ onSignup }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      onSignup(email);
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+  
+      console.log("User created:", user);
+  
+      // Save user to Firebase Realtime Database
+      const userRef = ref(database, 'users/' + user.uid);
+      await set(userRef, {
+        email: user.email,
+        createdAt: new Date().toISOString(),
+      });
+  
+      console.log("User saved to database");
+      onSignup(user.email);
     } catch (err) {
+      console.error("Error:", err);
       setError(err.message);
     }
   };
