@@ -5,6 +5,7 @@ import Login from './Login';
 import Home from './Home';
 import Kids from './Kids';
 import Kits from './Kits';
+import R9_Barça from './R9_Barça';
 import "./App.css";
 
 const App = () => {
@@ -53,6 +54,7 @@ const App = () => {
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
         <Route path="/kids" element={<Kids />} />
         <Route path="/kits" element={<Kits />} />
+        <Route path="/item1" element={<R9_Barça />} />
       </Routes>
     </Router>
   );
