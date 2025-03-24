@@ -1,9 +1,12 @@
 import React from "react";
+import RonaldoNaz from './assets/1.jpg';
+import './R9_Barça.css';
 
 const R9_Barcelona = () => {    
     return (
-        <div>
-            <h1>Barcelona</h1>
+        <div className="page-container">
+            <div></div>
+            
         </div>
     )
 }

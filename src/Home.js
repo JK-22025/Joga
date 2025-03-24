@@ -49,7 +49,7 @@ const Home = ({ user }) => {
     <div className="kit">
       <img src={myImage} alt="R9 Kit" className="kit-image" />
       <div className="kit-details">
-        <Link to={`/item1`}>
+        <Link to={`/R9Barca`}>
           <p className="kit-description">{kitDetails.Description}</p>
           <p className="kit-price">{kitDetails.Price}</p>
         </Link>
