@@ -17,6 +17,7 @@ const R9_Barcelona = () => {
                         <button>L</button>
                         <button>XL</button>
                     </div>
+                    
                 </div>
                 <div className="quantity-selection">
                     <p>Quantity:</p>
