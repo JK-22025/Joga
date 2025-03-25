@@ -4,7 +4,7 @@ import './R9_Barça.css';
 
 const R9_Barcelona = () => {    
     return (
-        <div className="page-container">
+        <div className="kit-image">
             <img src={RonaldoNaz} alt="RonaldoNaz" />
             <div className="kit-details">
                 <h2>Ronaldo Nazario 96/97 Barcelona away kit </h2>

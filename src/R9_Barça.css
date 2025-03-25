@@ -1,4 +1,4 @@
-.page-container{
+.kit-image{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -25,7 +25,7 @@
     margin-bottom: 10px;
     color: black;
 }
-.size-selction p{
+.size-selection p{
     font-size: 1rem;
     margin-bottom: 5px;
 }
@@ -36,3 +36,47 @@
     cursor: pointer;
     transition: 0.3s;
 }
+.size-buttons button:hover{
+    background-color: black;
+}
+.quantity-selection p{
+    margin: 10px 0 5px;
+}
+.kit-description {
+    font-size: 1rem;
+    margin: 15px 0;
+    line-height: 1.5;
+  }
+  
+  /* Buttons for add to cart & Apple Pay */
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .add-to-cart,
+  .apple-pay {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-to-cart {
+    background: black;
+    color: white;
+  }
+  
+  .add-to-cart:hover {
+    background: #444;
+  }
+  
+  .apple-pay {
+    background: #000;
+    color: white;
+  }
+  
+  .apple-pay:hover {
+    background: #333;
+  }
