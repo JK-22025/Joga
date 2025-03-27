@@ -1,86 +1,123 @@
-.kit-image{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 40px;
-    gap: 50px;
+.kit {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.kit-image img{
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.kit-details{
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    font-family: Arial;
-    align-items: flex-end;
-    text-align: right;
-    margin-left: auto;
-
+td {
+  vertical-align: top;
+  padding: 15px;
 }
 
-.kit-details h2{
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: black;
-    font-weight: bold;
-}
-.size-selection p{
-    font-size: 1rem;
-    margin-bottom: 5px;
+/* Image styling */
+.kit img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
 }
 
-.size-selection button{
-    margin: 5px;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+/* Details styling */
+.kit h2 {
+  font-size: 22px;
+  margin-top: 0;
+  color: #222;
 }
-.size-selection button:hover{
-    background-color: black;
+
+.kit p {
+  font-size: 15px;
+  color: #444;
+  margin: 8px 0;
 }
-.quantity-selection p{
-    margin: 10px 0 5px;
-}
+
 .kit-description {
-    font-size: 1rem;
-    margin: 15px 0;
-    line-height: 1.5;
+  font-style: italic;
+  color: #666;
+}
+
+/* Size buttons */
+.size-selection p {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.size-selection button {
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #0047ab;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.size-selection button:hover {
+  background-color: #003080;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.add-to-cart-button,
+.apple-pay,
+.google-pay {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-to-cart-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.apple-pay {
+  background-color: black;
+  color: white;
+}
+
+.google-pay {
+  background-color: #4285f4;
+  color: white;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  table,
+  tr,
+  td {
+    display: block;
+    width: 100%;
   }
-  
-  /* Buttons for add to cart & Apple Pay */
+
+  .kit img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
   .buttons {
-    display: flex;
-    gap: 10px;
+    flex-direction: column;
   }
-  
-  .add-to-cart,
-  .apple-pay {
-    padding: 10px 15px;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
+
+  .buttons button {
+    width: 100%;
   }
-  
-  .add-to-cart {
-    background: black;
-    color: white;
-  }
-  
-  .add-to-cart:hover {
-    background: #444;
-  }
-  
-  .apple-pay {
-    background: #000;
-    color: white;
-  }
-  
-  .apple-pay:hover {
-    background: #333;
-  }
+}
