@@ -20,7 +20,7 @@ td {
 
 /* Image styling */
 .kit img {
-  width: 100%;
+  width: 100px;
   max-width: 350px;
   border-radius: 10px;
   border: 2px solid #ddd;
