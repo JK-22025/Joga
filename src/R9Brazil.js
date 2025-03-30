@@ -1,6 +1,6 @@
 import React from "react";
 import RonaldoBrazil from './assets/2.jpg';
-import './R9_brazil.css';
+import './R9Brazil.css';
 
 const R9Brazil = () => {
     return (
