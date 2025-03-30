@@ -59,7 +59,7 @@ const Home = ({ user }) => {
     <div className="kit">
       <img src={myImage2} alt="Ronaldo Brazil 98 Kit" className="kit-image" />
       <div className="kit-details">
-        <Link to={`/${kitDetails2.id}`}>
+        <Link to={'/R9Brazil'}>
 
         
           <p className="kit-name">{kitDetails2.Name}</p>
@@ -71,7 +71,7 @@ const Home = ({ user }) => {
     <div className="kit">
       <img src={myImage3} alt="Romario Brazil 94 Kit" className="kit-image" />
       <div className="kit-details">
-        <Link to={`/${kitDetails3.id}`}>
+        <Link to={`/Romario`}>
           <p className="kit-name">{kitDetails3.Name}</p>
           <p className="kit-price">{kitDetails3.Price}</p>
         </Link>

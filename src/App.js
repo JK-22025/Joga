@@ -7,6 +7,7 @@ import Kids from './Kids';
 import Kits from './Kits';
 import R9Barça from './R9Barça';
 import R9Brazil from './R9Brazil';
+import Romario from './Romario';
 import "./App.css";
 
 const App = () => {
@@ -57,6 +58,7 @@ const App = () => {
         <Route path="/kits" element={<Kits />} />
         <Route path="/R9Barca" element={<R9Barça />} />
         <Route path="/R9Brazil" element={<R9Brazil />} />
+        <Route path="/Romario" element={<Romario />} />
         
         
       </Routes>
