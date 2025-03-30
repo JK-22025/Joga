@@ -1,0 +1,123 @@
+.kit {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    vertical-align: top;
+    padding: 15px;
+  }
+  
+  /* Image styling */
+  .kit img {
+    width: 100px;
+    max-width: 350px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+  }
+  
+  /* Details styling */
+  .kit h2 {
+    font-size: 22px;
+    margin-top: 0;
+    color: #222;
+  }
+  
+  .kit p {
+    font-size: 15px;
+    color: #444;
+    margin: 8px 0;
+  }
+  
+  .kit-description {
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* Size buttons */
+  .size-selection p {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .size-selection button {
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #0047ab;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .size-selection button:hover {
+    background-color: #003080;
+  }
+  
+  /* Buttons */
+  .buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .add-to-cart-button,
+  .apple-pay,
+  .google-pay {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .add-to-cart-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .apple-pay {
+    background-color: black;
+    color: white;
+  }
+  
+  .google-pay {
+    background-color: #4285f4;
+    color: white;
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    table,
+    tr,
+    td {
+      display: block;
+      width: 100%;
+    }
+  
+    .kit img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+  
+    .buttons button {
+      width: 100%;
+    }
+  }
