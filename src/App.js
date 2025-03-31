@@ -8,6 +8,15 @@ import Kits from './Kits';
 import R9Barça from './R9Barça';
 import R9Brazil from './R9Brazil';
 import Romario from './Romario';
+import Maradona from "./assets/Drugs.jpg";
+import Dinho from "./assets/dinho.jpg";
+import Arsenal from "./assets/Gunners.jpg";
+import Sixtuple from "./assets/sixtuple.jpg";
+import Cantona from "./assets/THE KING IS BACK.jpg";
+import Maldini from "./assets/UN cONFIZZIONE.jpg";
+import Zidane from "./assets/Zizou.jpg";
+import Pele from "./assets/PeleBeck01.jpg";
+import Cruyff from "./assets/Flying dutchman.jpg";
 import "./App.css";
 
 const App = () => {
@@ -59,10 +68,10 @@ const App = () => {
         <Route path="/R9Barca" element={<R9Barça />} />
         <Route path="/R9Brazil" element={<R9Brazil />} />
         <Route path="/Romario" element={<Romario />} />
-        <Route path="/Mardona" element={<Mardona />} />
+        <Route path="/Maradona" element={<Maradona />} />
         <Route path="/Dinho" element={<Dinho />} />
         <Route path="/Arsenal" element={<Arsenal />} />
-        <Route path="/Barcelona" element={<Barcelona />} />
+        <Route path="/Sixtuple" element={<Sixtuple />} />
         <Route path="/Cruyff" element={<Cruyff />} />
         <Route path="/Pele" element={<Pele />} />
         <Route path="/Zidane" element={<Zidane />} />
