@@ -59,6 +59,15 @@ const App = () => {
         <Route path="/R9Barca" element={<R9Barça />} />
         <Route path="/R9Brazil" element={<R9Brazil />} />
         <Route path="/Romario" element={<Romario />} />
+        <Route path="/Mardona" element={<Mardona />} />
+        <Route path="/Dinho" element={<Dinho />} />
+        <Route path="/Arsenal" element={<Arsenal />} />
+        <Route path="/Barcelona" element={<Barcelona />} />
+        <Route path="/Cruyff" element={<Cruyff />} />
+        <Route path="/Pele" element={<Pele />} />
+        <Route path="/Zidane" element={<Zidane />} />
+        <Route path="/Maldini" element={<Maldini />} />
+        <Route path="/Cantona" element={<Cantona />} />
         
         
       </Routes>
