@@ -93,7 +93,7 @@ const Kits = () => {
                 <div className="kit">
                     <img src={Dinho} alt="Ronaldinho Kit" className="kit-image" />
                     <div className="kit-details">
-                        <Link to={'/Ronaldinho'} rel="noopener noreferrer">
+                        <Link to={'/Dinho'} rel="noopener noreferrer">
                             <p className="kit-name">{kitsBarca.Name}</p>
                             <p className="kit-price">{kitsBarca.Price}</p>
                         </Link>

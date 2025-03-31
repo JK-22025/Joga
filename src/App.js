@@ -5,19 +5,19 @@ import Login from './Login';
 import Home from './Home';
 import Kids from './Kids';
 import Kits from './Kits';
-import R9Barça from './R9Barça';
+import Maradona from './Maradona';
+import R9Barca from './R9Barca';
 import R9Brazil from './R9Brazil';
 import Romario from './Romario';
-import Maradona from "./assets/Drugs.jpg";
-import Dinho from "./assets/dinho.jpg";
-import Arsenal from "./assets/Gunners.jpg";
-import Sixtuple from "./assets/sixtuple.jpg";
-import Cantona from "./assets/THE KING IS BACK.jpg";
-import Maldini from "./assets/UN cONFIZZIONE.jpg";
-import Zidane from "./assets/Zizou.jpg";
-import Pele from "./assets/PeleBeck01.jpg";
-import Cruyff from "./assets/Flying dutchman.jpg";
-import "./App.css";
+import Dinho from './Dinho';
+import Arsenal from './Arsenal';
+import Sixtuple from './Sixtuple';
+import Cantona from './Cantona';
+import Maldini from './Maldini';
+import Zidane from './Zidane';
+import Pele from './assets/PeleBeck01.jpg';
+import Cruyff from './assets/Flying dutchman.jpg';
+import './App.css';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -65,7 +65,7 @@ const App = () => {
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
         <Route path="/kids" element={<Kids />} />
         <Route path="/kits" element={<Kits />} />
-        <Route path="/R9Barca" element={<R9Barça />} />
+        <Route path="/R9Barca" element={<R9Barca />} />
         <Route path="/R9Brazil" element={<R9Brazil />} />
         <Route path="/Romario" element={<Romario />} />
         <Route path="/Maradona" element={<Maradona />} />

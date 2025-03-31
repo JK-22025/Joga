@@ -1,19 +1,18 @@
 import React from "react";
-import RonaldoNaz from './assets/1.jpg';
-import './R9_Barça.css';
-
-const R9_Barcelona = () => {    
+import Maldinikit from './assets/UN cONFIZZIONE.jpg';
+import './Maldini.css';
+const Maldini = () => {
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    <td><img src={RonaldoNaz} alt="Ronaldo Nazario Kit" /></td>
+                    <td><img src={Maldinikit} alt="Maldini Kit" /></td>
                     <td>
-                        <h2>Ronaldo Nazario 96/97 Barcelona away kit</h2>
-                        <p><strong>Price:</strong> $150</p>
+                        <h2>Maldini AC Milan home kit 93/94 </h2>
+                        <p><strong>Price:</strong> $500</p>
                         <p className="kit-description">
-                            Ronaldo Nazario 96/97 Barcelona away kit where he had an amazing season with Barcelona where he scored 47 goals in 51 games.
+                            The AC Milan Kit with Maldini.
                         </p>
                         <div className="size-selection">
                             <p><strong>Select Size:</strong></p>
@@ -29,12 +28,10 @@ const R9_Barcelona = () => {
                         </div>
                     </td>
                 </tr>
-
                 </tbody>
-                
             </table>
         </div>
     );
-};
+}
 
-export default R9_Barcelona;
+export default Maldini;

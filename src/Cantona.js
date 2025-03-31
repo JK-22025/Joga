@@ -1,18 +1,18 @@
 import React from "react";
-import Zidanekit from './assets/Zizou.jpg';
-import './Zidane.css';
-const Zidane = () => {
+import Cantonakit from './assets/THE KING IS BACK.jpg';
+import './Cantona.css';
+const Cantona = () => {
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    <td><img src={Zidanekit} alt="Zidane Kit" /></td>
+                    <td><img src={Cantonakit} alt="Cantona Kit" /></td>
                     <td>
-                        <h2>Juventus Zidane 96/97 home kit</h2>
+                        <h2>Cantona Macheseter United away kit 96/97 </h2>
                         <p><strong>Price:</strong> $300</p>
                         <p className="kit-description">
-                            Zidane with Juventus where he won the Ballon d'Or in 97.
+                            The Macheseter United Kit where Cantona kicked a fan during a game.
                         </p>
                         <div className="size-selection">
                             <p><strong>Select Size:</strong></p>
@@ -34,4 +34,4 @@ const Zidane = () => {
     );
 }
 
-export default Zidane;
+export default Cantona;

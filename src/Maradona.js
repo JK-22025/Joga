@@ -1,13 +1,13 @@
 import React from "react";
 import Maradonakit from './assets/Drugs.jpg';
-import './Maradona.css';
+
 const Maradona = () => {
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    <td><img src={Maradonakit} alt="Napoli Kit" /></td>
+                    { <td><img src={Maradonakit} alt="Napoli Kit" /></td>}
                     <td>
                         <h2>Napoli Maradona 85/86 home kit</h2>
                         <p><strong>Price:</strong> $250</p>
@@ -35,3 +35,5 @@ const Maradona = () => {
 }
 
 export default Maradona;
+
+

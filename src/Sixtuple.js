@@ -1,18 +1,18 @@
 import React from "react";
-import Zidanekit from './assets/Zizou.jpg';
-import './Zidane.css';
-const Zidane = () => {
+import Barcelonakit from './assets/sixtuple.jpg';
+import './Sixtuple.css';
+const Sixtuple = () => {
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    <td><img src={Zidanekit} alt="Zidane Kit" /></td>
+                    <td><img src={Barcelonakit} alt="Barcalona Kit" /></td>
                     <td>
-                        <h2>Juventus Zidane 96/97 home kit</h2>
+                        <h2>Barcelona 08/09 home kit</h2>
                         <p><strong>Price:</strong> $300</p>
                         <p className="kit-description">
-                            Zidane with Juventus where he won the Ballon d'Or in 97.
+                            The Barcalona Kit where they won thier first triple title.
                         </p>
                         <div className="size-selection">
                             <p><strong>Select Size:</strong></p>
@@ -34,4 +34,4 @@ const Zidane = () => {
     );
 }
 
-export default Zidane;
+export default Sixtuple;

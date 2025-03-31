@@ -1,18 +1,19 @@
 import React from "react";
-import Zidanekit from './assets/Zizou.jpg';
-import './Zidane.css';
-const Zidane = () => {
+import RonaldoNaz from './assets/1.jpg';
+import './R9Barca.css';
+
+const R9Barca = () => {    
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    <td><img src={Zidanekit} alt="Zidane Kit" /></td>
+                    <td><img src={RonaldoNaz} alt="Ronaldo Nazario Kit" /></td>
                     <td>
-                        <h2>Juventus Zidane 96/97 home kit</h2>
-                        <p><strong>Price:</strong> $300</p>
+                        <h2>Ronaldo Nazario 96/97 Barcelona away kit</h2>
+                        <p><strong>Price:</strong> $150</p>
                         <p className="kit-description">
-                            Zidane with Juventus where he won the Ballon d'Or in 97.
+                            Ronaldo Nazario 96/97 Barcelona away kit where he had an amazing season with Barcelona where he scored 47 goals in 51 games.
                         </p>
                         <div className="size-selection">
                             <p><strong>Select Size:</strong></p>
@@ -28,10 +29,12 @@ const Zidane = () => {
                         </div>
                     </td>
                 </tr>
+
                 </tbody>
+                
             </table>
         </div>
     );
-}
+};
 
-export default Zidane;
+export default R9Barca;
