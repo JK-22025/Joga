@@ -15,8 +15,8 @@ import Sixtuple from './Sixtuple';
 import Cantona from './Cantona';
 import Maldini from './Maldini';
 import Zidane from './Zidane';
-import Pele from './assets/PeleBeck01.jpg';
-import Cruyff from './assets/Flying dutchman.jpg';
+import Pele from './Pele';
+import Cruyff from './Cruyff';
 import './App.css';
 
 const App = () => {

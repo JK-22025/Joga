@@ -1,0 +1,38 @@
+import React from "react";
+import Pelekit from './assets/PeleBeck01.jpg';
+import './Pele.css';
+
+const Pele = () => {
+    return (
+        <div className="kit">
+            <table>
+                <tbody>
+                <tr>
+                    <td><img src={Pelekit} alt="Pele Kit" /></td>
+                    <td>
+                        <h2>Pele Brazil 1970 home kit</h2>
+                        <p><strong>Price:</strong> $1000</p>
+                        <p className="kit-description">
+                            Pele in 1970 won his third and lastworld cup for Brazil.
+                        </p>
+                        <div className="size-selection">
+                            <p><strong>Select Size:</strong></p>
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                        <div className="buttons">
+                            <button className="add-to-cart-button">Add to Cart</button>
+                            <button className="apple-pay">Apple Pay</button>
+                            <button className="google-pay">Google Pay</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    );
+}
+
+export default Pele;
