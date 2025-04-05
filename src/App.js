@@ -17,6 +17,7 @@ import Maldini from './Maldini';
 import Zidane from './Zidane';
 import Pele from './Pele';
 import Cruyff from './Cruyff';
+import Maradonakids from './Maradonakids';
 import './App.css';
 
 const App = () => {
@@ -77,6 +78,7 @@ const App = () => {
         <Route path="/Zidane" element={<Zidane />} />
         <Route path="/Maldini" element={<Maldini />} />
         <Route path="/Cantona" element={<Cantona />} />
+        <Route path="/Maradonakids" element={<Maradonakids />} />
         
         
       </Routes>

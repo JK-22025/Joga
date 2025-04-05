@@ -1,17 +1,17 @@
 import React from "react";
-import Maradonakit from './assets/Drugs.jpg';
-import './Maradona.css';
+import Maradonakidskit from './assets/Drugs.jpg';
+import './Maradonakids.css';
 
-const Maradona = () => {
+const Maradonakids = () => {
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    { <td><img src={Maradonakit} alt="Napoli Kit" /></td>}
+                    { <td><img src={Maradonakids} alt="Napoli Kit" /></td>}
                     <td>
                         <h2>Napoli Maradona 85/86 home kit</h2>
-                        <p><strong>Price:</strong> $250</p>
+                        <p><strong>Price:</strong> $100</p>
                         <p className="kit-description">
                             Maradona second season with Napoli when he won the world cup in 86 in Mexico.
                         </p>
@@ -35,6 +35,6 @@ const Maradona = () => {
     );
 }
 
-export default Maradona;
+export default Maradonakidskit;
 
 
