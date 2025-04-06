@@ -83,3 +83,31 @@ button:hover {
 .logout-button:hover {
   background-color: darkred;
 }
+.cart-icon-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #333;
+  
+}
+
+.cart-icon-link span{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+

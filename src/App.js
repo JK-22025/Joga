@@ -33,6 +33,7 @@ import './App.css';
 
 const App = () => {
   const [user, setUser] = useState(null);
+  const { cartItems } = useCart();
 
   const handleSignup = (email) => {
     setUser({ email });
