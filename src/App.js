@@ -26,6 +26,9 @@ import Maldinikids from './Maldinikids';
 import Zidanekids from './Zidanekids';
 import Pelekids from './Pelekids';
 import Cruyffkids from './Cruyffkids';
+import { useCart } from './Cart';
+import Cart from './Cart';
+import { FaShoppingCart } from 'react-icons/fa';
 import './App.css';
 
 const App = () => {
@@ -63,6 +66,23 @@ const App = () => {
         {user && (
           <button className="logout-button" onClick={handleLogout}>Logout</button>
         )}
+        <Link to="/cart" className="cart-icon-link" style={{ position: 'relative', marginLeft: 'auto' }}>
+          <FaShoppingCart size={20} />
+          {cartItems.length > 0 && (
+            <span style={{
+              position: 'absolute',
+              top: '-8px',
+              right: '-10px',
+              background: 'red',
+              color: 'white',
+              borderRadius: '50%',
+              fontSize: '12px',
+              padding: '2px 6px'
+            }}>
+              {cartItems.length}
+            </span>
+          )}
+        </Link>
       </nav>
 
       <Routes>
@@ -95,6 +115,7 @@ const App = () => {
         <Route path="/Zidanekids" element={<Zidanekids />} />
         <Route path="/Pelekids" element={<Pelekids />} />
         <Route path="/Cruyffkids" element={<Cruyffkids />} />
+        <Route path="/cart" element={<Cart />} />
 
 
         
