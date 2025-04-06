@@ -116,7 +116,7 @@ const App = () => {
         <Route path="/Zidanekids" element={<Zidanekids />} />
         <Route path="/Pelekids" element={<Pelekids />} />
         <Route path="/Cruyffkids" element={<Cruyffkids />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/Cart" element={<Cart />} />
 
 
         
