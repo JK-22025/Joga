@@ -1,19 +1,19 @@
 import React from "react";
-import Maradonakidskit from './assets/Drugs.jpg';
-import './Maradonakids.css';
+import Arsenalkitkids from './assets/Gunners.jpg';
+import './Arsenal.css';
 
-const Maradonakids = () => {
+const Arsenalkids = () => {
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    { <td><img src={Maradonakidskit} alt="Napoli Kit" /></td>}
+                    { <td><img src={Arsenalkitkids} alt="Arsenal Kit" /></td>}
                     <td>
-                        <h2>Napoli Maradona 85/86 home kit</h2>
-                        <p><strong>Price:</strong> $100</p>
+                        <h2>Arsenal 93/94 home kit</h2>
+                        <p><strong>Price:</strong> $50</p>
                         <p className="kit-description">
-                            Maradona second season with Napoli when he won the world cup in 86 in Mexico.
+                            Arsenal 93/94 home kit Lee Dixion
                         </p>
                         <div className="size-selection">
                             <p><strong>Select Size:</strong></p>
@@ -35,6 +35,6 @@ const Maradonakids = () => {
     );
 }
 
-export default Maradonakids;
+export default Arsenalkids;
 
 

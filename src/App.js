@@ -18,6 +18,9 @@ import Zidane from './Zidane';
 import Pele from './Pele';
 import Cruyff from './Cruyff';
 import Maradonakids from './Maradonakids';
+import Dinhokids from './Dinhokids';
+import Arsenalkids from './Arsenalkids';
+import Sixtuplekids from './Sixtuplekids';
 import './App.css';
 
 const App = () => {
@@ -79,6 +82,10 @@ const App = () => {
         <Route path="/Maldini" element={<Maldini />} />
         <Route path="/Cantona" element={<Cantona />} />
         <Route path="/Maradonakids" element={<Maradonakids />} />
+        <Route path="/Dinhokids" element={<Dinhokids />} />
+        <Route path="/Arsenalkids" element={<Arsenalkids />} />
+        <Route path="/Sixtuplekids" element={<Sixtuplekids />} />
+
         
         
       </Routes>

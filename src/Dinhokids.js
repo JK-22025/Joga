@@ -1,19 +1,18 @@
 import React from "react";
-import Maradonakidskit from './assets/Drugs.jpg';
-import './Maradonakids.css';
-
-const Maradonakids = () => {
+import Ronaldinhokitkids from './assets/dinho.jpg';
+import './Dinho.css';
+const Dinhokids = () => {
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    { <td><img src={Maradonakidskit} alt="Napoli Kit" /></td>}
+                    <td><img src={Ronaldinhokitkids} alt="Ronaldinho Kit" /></td>
                     <td>
-                        <h2>Napoli Maradona 85/86 home kit</h2>
-                        <p><strong>Price:</strong> $100</p>
+                        <h2>Barcelona Ronaldinho 05/06 home kit</h2>
+                        <p><strong>Price:</strong> $50</p>
                         <p className="kit-description">
-                            Maradona second season with Napoli when he won the world cup in 86 in Mexico.
+                            Ronaldinho with Barcelona where he won the UCL in 2006.
                         </p>
                         <div className="size-selection">
                             <p><strong>Select Size:</strong></p>
@@ -35,6 +34,4 @@ const Maradonakids = () => {
     );
 }
 
-export default Maradonakids;
-
-
+export default Dinhokids;
