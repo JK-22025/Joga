@@ -1,24 +1,18 @@
 import React from "react";
-import {useCart} from './Cart';
-import RonaldoNaz from './assets/1.jpg';
-import './R9Barca.css';
-
-const R9Barca = () => {
-    const { addToCart } = useCart();
-    const [selectedSize, setSelectedSize] = useState(null);
-    
-    
+import Zidanekitkids from './assets/Zizou.jpg';
+import './Zidane.css';
+const Zidanekids = () => {
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    <td><img src={RonaldoNaz} alt="Ronaldo Nazario Kit" /></td>
+                    <td><img src={Zidanekitkids} alt="Zidane Kit" /></td>
                     <td>
-                        <h2>Ronaldo Nazario 96/97 Barcelona away kit</h2>
-                        <p><strong>Price:</strong> $150</p>
+                        <h2>Juventus Zidane 96/97 home kit</h2>
+                        <p><strong>Price:</strong> $59</p>
                         <p className="kit-description">
-                            Ronaldo Nazario 96/97 Barcelona away kit where he had an amazing season with Barcelona where he scored 47 goals in 51 games.
+                            Zidane with Juventus where he won the Ballon d'Or in 97.
                         </p>
                         <div className="size-selection">
                             <p><strong>Select Size:</strong></p>
@@ -34,12 +28,10 @@ const R9Barca = () => {
                         </div>
                     </td>
                 </tr>
-
                 </tbody>
-                
             </table>
         </div>
     );
-};
+}
 
-export default R9Barca;
+export default Zidanekids;

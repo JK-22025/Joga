@@ -1,24 +1,18 @@
 import React from "react";
-import {useCart} from './Cart';
-import RonaldoNaz from './assets/1.jpg';
-import './R9Barca.css';
-
-const R9Barca = () => {
-    const { addToCart } = useCart();
-    const [selectedSize, setSelectedSize] = useState(null);
-    
-    
+import Maldinikitkids from './assets/UN cONFIZZIONE.jpg';
+import './Maldini.css';
+const Maldinikids = () => {
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    <td><img src={RonaldoNaz} alt="Ronaldo Nazario Kit" /></td>
+                    <td><img src={Maldinikitkids} alt="Maldini Kit" /></td>
                     <td>
-                        <h2>Ronaldo Nazario 96/97 Barcelona away kit</h2>
-                        <p><strong>Price:</strong> $150</p>
+                        <h2>Maldini AC Milan home kit 93/94 </h2>
+                        <p><strong>Price:</strong> $60</p>
                         <p className="kit-description">
-                            Ronaldo Nazario 96/97 Barcelona away kit where he had an amazing season with Barcelona where he scored 47 goals in 51 games.
+                            The AC Milan Kit with Maldini.
                         </p>
                         <div className="size-selection">
                             <p><strong>Select Size:</strong></p>
@@ -34,12 +28,10 @@ const R9Barca = () => {
                         </div>
                     </td>
                 </tr>
-
                 </tbody>
-                
             </table>
         </div>
     );
-};
+}
 
-export default R9Barca;
+export default Maldinikids;

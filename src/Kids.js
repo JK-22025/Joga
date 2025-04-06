@@ -114,7 +114,7 @@ const Kids = () => {
                 <div className="kit">
                     <img src={Barca} alt="Barcelona Kit" className="kit-image" />
                     <div className="kit-details">
-                        <Link to={'/Barcelonakids'}>
+                        <Link to={'/Sixtuplekids'}>
                             <p className="kit-name">{kitsBarca2.Name}</p>
                             <p className="kit-price">{kitsBarca2.Price}</p>
                         </Link>

@@ -21,6 +21,11 @@ import Maradonakids from './Maradonakids';
 import Dinhokids from './Dinhokids';
 import Arsenalkids from './Arsenalkids';
 import Sixtuplekids from './Sixtuplekids';
+import Cantonakids from './Cantonakids';
+import Maldinikids from './Maldinikids';
+import Zidanekids from './Zidanekids';
+import Pelekids from './Pelekids';
+import Cruyffkids from './Cruyffkids';
 import './App.css';
 
 const App = () => {
@@ -85,6 +90,12 @@ const App = () => {
         <Route path="/Dinhokids" element={<Dinhokids />} />
         <Route path="/Arsenalkids" element={<Arsenalkids />} />
         <Route path="/Sixtuplekids" element={<Sixtuplekids />} />
+        <Route path="/Cantonakids" element={<Cantonakids />} />
+        <Route path="/Maldinikids" element={<Maldinikids />} />
+        <Route path="/Zidanekids" element={<Zidanekids />} />
+        <Route path="/Pelekids" element={<Pelekids />} />
+        <Route path="/Cruyffkids" element={<Cruyffkids />} />
+
 
         
         

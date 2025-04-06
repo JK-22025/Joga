@@ -1,24 +1,19 @@
 import React from "react";
-import {useCart} from './Cart';
-import RonaldoNaz from './assets/1.jpg';
-import './R9Barca.css';
+import Cruyffkitkids from './assets/Flying dutchman.jpg';
+import './Cruyff.css';
 
-const R9Barca = () => {
-    const { addToCart } = useCart();
-    const [selectedSize, setSelectedSize] = useState(null);
-    
-    
+const Cruyffkids = () => {
     return (
         <div className="kit">
             <table>
                 <tbody>
                 <tr>
-                    <td><img src={RonaldoNaz} alt="Ronaldo Nazario Kit" /></td>
+                    <td><img src={Cruyffkitkids} alt="Cruyff Kit" /></td>
                     <td>
-                        <h2>Ronaldo Nazario 96/97 Barcelona away kit</h2>
-                        <p><strong>Price:</strong> $150</p>
+                        <h2>Cruyff Netherlands 1974 home kit</h2>
+                        <p><strong>Price:</strong> $100</p>
                         <p className="kit-description">
-                            Ronaldo Nazario 96/97 Barcelona away kit where he had an amazing season with Barcelona where he scored 47 goals in 51 games.
+                            Cruyff reached the world cup final in 1974 and lost it to West Germany.
                         </p>
                         <div className="size-selection">
                             <p><strong>Select Size:</strong></p>
@@ -34,12 +29,10 @@ const R9Barca = () => {
                         </div>
                     </td>
                 </tr>
-
                 </tbody>
-                
             </table>
         </div>
     );
-};
+}
 
-export default R9Barca;
+export default Cruyffkids;
