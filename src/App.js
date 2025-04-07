@@ -26,7 +26,7 @@ import Maldinikids from './Maldinikids';
 import Zidanekids from './Zidanekids';
 import Pelekids from './Pelekids';
 import Cruyffkids from './Cruyffkids';
-import { useCart } from './Cart';
+import { useCart } from './Cartcontext';
 import Cartpage from './Cartpage';
 import { FaShoppingCart } from 'react-icons/fa';
 import './App.css';
@@ -117,7 +117,7 @@ const App = () => {
         <Route path="/Zidanekids" element={<Zidanekids />} />
         <Route path="/Pelekids" element={<Pelekids />} />
         <Route path="/Cruyffkids" element={<Cruyffkids />} />
-        <Route path="/Cartpage" element={<Cartpage />} />
+        <Route path="/cart" element={<Cartpage />} />
 
 
         

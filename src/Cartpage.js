@@ -1,14 +1,14 @@
 import React from "react";
-import { useCart } from "./Cart";
+import { useCart } from "./Cartcontext";
 import './Cartpage.css';
 
 const Cartpage = () => {
-    const { cartItems, addToCart, removeFromCart } = useCart();
+    const { cartItems, removeFromCart, clearCart } = useCart();
 
     const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
     const handleCheckout = () => {
         alert("Thank you for your purchase and remember to play beatiful!");
-        removeFromCart();
+        clearCart();
     };
     
     return (
