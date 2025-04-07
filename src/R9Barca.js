@@ -6,6 +6,7 @@ import './R9Barca.css';
 const R9Barca = () => {
   const { addToCart } = useCart();
   const [selectedSize, setSelectedSize] = useState(null);
+  
 
   const handleAddToCart = () => {
     if (!selectedSize) {

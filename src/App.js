@@ -27,13 +27,14 @@ import Zidanekids from './Zidanekids';
 import Pelekids from './Pelekids';
 import Cruyffkids from './Cruyffkids';
 import { useCart } from './Cart';
-import Cart from './Cart';
+import Cartpage from './Cartpage';
 import { FaShoppingCart } from 'react-icons/fa';
 import './App.css';
 
 const App = () => {
   const [user, setUser] = useState(null);
   const { cartItems } = useCart();
+
 
   const handleSignup = (email) => {
     setUser({ email });
@@ -116,7 +117,7 @@ const App = () => {
         <Route path="/Zidanekids" element={<Zidanekids />} />
         <Route path="/Pelekids" element={<Pelekids />} />
         <Route path="/Cruyffkids" element={<Cruyffkids />} />
-        <Route path="/Cart" element={<Cart />} />
+        <Route path="/Cartpage" element={<Cartpage />} />
 
 
         
