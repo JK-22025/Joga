@@ -1,8 +1,29 @@
 import React from "react";
+import { useCart } from './Cartcontext';
 import RonaldoBrazil from './assets/2.jpg';
 import './R9Brazil.css';
 
 const R9Brazil = () => {
+    const { addToCart } = useCart();
+    const[selectedSize, setSelectedSize] = useState(null);
+
+    const handleAddToCart = () => {
+        if (!selectedSize) {
+            alert('Please select a size');
+            return;
+        }
+    
+        const item = {
+            id: `R9Brazil-${selectedSize}`,
+            name: 'Ronaldo Brazil 98/99 Brazil home kit',
+            price: 155,
+            size: selectedSize,
+            image: RonaldoBrazil
+        };
+    
+        addToCart(item);
+        alert('Item added to cart');
+    };
     return (
       <div className="kit">
         <table>
@@ -17,6 +38,26 @@ const R9Brazil = () => {
                     </p>
                     <div className="size-selection">
                         <p><strong>Select Size:</strong></p>
+                        {['S', 'M', 'L', 'XL'].map((size) => (
+                            <button>
+                                key={size}
+                                onClick={() => setSelectedSize(size)}
+                                style={{
+                                    margin: '5px',
+                                    backgroundColor: selectedSize === size ? 'black' : 'blue',
+                                    color: 'white',
+                                    padding: '5px 10px',
+                                    borderRadius: '5px',
+                                    border: 'none',
+                                    cursor: 'pointer'
+
+                                }}
+                            </button>
+                            >
+                            {size}
+                        ))}
+                    </div>
+                    <div className="size-selection">
                         <button>S</button>
                         <button>M</button>
                         <button>L</button>
